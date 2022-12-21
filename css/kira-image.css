@@ -17,7 +17,8 @@
   display: flex;
   flex-direction: column;
   transition: all 0.2s ease;
-  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
 }
 .kira-image .kira-image-modal * {
   transition: all 0.2s ease;
@@ -105,7 +106,9 @@
 .kira-image .kira-image-modal .kira-image-container .kira-image-list div img {
   max-width: calc(100% - 12px);
   max-height: calc(100% - 24px);
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .kira-image .kira-image-modal .kira-image-container .kira-image-list .kira-image-prev {
   transform: translateX(-100vw);
@@ -125,7 +128,8 @@
 .kira-image .kira-image-modal.visible {
   pointer-events: auto;
   background-color: rgba(0,0,0,0.6);
-  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 .kira-image .kira-image-modal.visible .kira-image-container div[class^="kira-image-"][class$="-button-panel"] .kira-image-exchange-button:hover {
   cursor: pointer;
@@ -138,60 +142,12 @@
   opacity: 0;
   pointer-events: none;
 }
-@-moz-keyframes kira-image-to-next {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100vw);
-  }
-}
-@-webkit-keyframes kira-image-to-next {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100vw);
-  }
-}
-@-o-keyframes kira-image-to-next {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100vw);
-  }
-}
 @keyframes kira-image-to-next {
   from {
     transform: translateX(0);
   }
   to {
     transform: translateX(-100vw);
-  }
-}
-@-moz-keyframes kira-image-to-prev {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100vw);
-  }
-}
-@-webkit-keyframes kira-image-to-prev {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100vw);
-  }
-}
-@-o-keyframes kira-image-to-prev {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100vw);
   }
 }
 @keyframes kira-image-to-prev {

@@ -21,6 +21,7 @@
 }
 @media (max-width: 1000px) {
   body {
+    height: -moz-fit-content;
     height: fit-content;
     overflow: auto;
   }
@@ -53,6 +54,7 @@
     background-color: rgba(0,0,0,0.16);
   }
   body .kira-body {
+    height: -moz-fit-content;
     height: fit-content;
     overflow: visible;
   }

@@ -1,6 +1,7 @@
 .kira-content {
   position: relative;
   max-width: 860px;
+  height: -moz-fit-content;
   height: fit-content;
   flex-grow: 1;
   overflow: auto;
